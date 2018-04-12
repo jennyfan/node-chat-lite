@@ -1,4 +1,3 @@
-
 This is the web app served up by the ESP8266 for Disaster Radio + the simulator web server.
 
 # Setup
@@ -32,6 +31,3 @@ or if you don't like HMR:
 # Uploading to ESP8266
 
 After building with npm, the web app can be uploaded with `make flash_fs'
-
-
-
