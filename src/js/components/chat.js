@@ -41,7 +41,7 @@ module.exports = function(Component) {
       this.scrollBottom()
     }
 
-	  render() {
+    render() {
 
       /*** PRINTS CHAT VIEW ***/
 
@@ -50,14 +50,14 @@ module.exports = function(Component) {
         return <ChatMessage txt={o.txt} type={o.type} />
       }, this)
 
-		  return <div>
+      return <div>
         <form id="chatForm" action="/chat" method="POST" onsubmit={this.send}>
           <div id="chat">
             {messages}
           </div>
-          <input id="chatInput" type="text" name="msg" placeholder="Enter you name or alias" autofocus />
+          <input id="chatInput" type="text" name="msg" placeholder="Enter your name" autofocus />
         </form>
       </div>
-	  }
+    }
   }
 }

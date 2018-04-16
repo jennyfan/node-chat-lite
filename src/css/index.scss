@@ -7,7 +7,7 @@ body {
     font-family: sans-serif;
     margin: 20px;
     background: rgba(0,0,0,1);
-    color: $white;
+    color: #fff;
 }
 
 .noselect {
@@ -25,6 +25,9 @@ h1 {
     font-size: 1.2em;
 }
 
+#header {
+    text-align: center;
+}
 #chat {
     width: 100%;
     max-width: 630px;
@@ -34,22 +37,22 @@ h1 {
     border: 1px solid rgba(80,80,80,1);
     color: #0fba00;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 16px;
     padding: 5px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 #chat .remote {
-    color: #00bf00;
+    color: #FF3B30;
 }
 
 #chat .self {
-    color: #40fe55;
+    color: #3E93FF;
 }
 
 #chat .status {
-    color: #ba0f00;
+    color: #fff;
 }
 
 #chatInput {
@@ -58,10 +61,10 @@ h1 {
     margin: 20px auto;
     padding: 5px;
     display: block;
-    color: #0fba00;
+    color: #3E93FF;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 16px;
     background-color: black;
     border: 0;
-    border-top: 1px solid gray;
+    border: 1px solid gray;
 }

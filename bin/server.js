@@ -111,7 +111,7 @@ wsServer.on('connection', function(ws, req) {
   // send fake chat messages every so often
   var sendTimer = setInterval(function() {
     console.log("sending message with ID:", curID);
-    curID = sendMsg(ws, "<cookie_cat> hello apocalypse!", curID);
+    curID = sendMsg(ws, "<911> connected", curID);
 
   }, 5000);
 

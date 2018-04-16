@@ -119,6 +119,7 @@ module.exports = function(uriPath, opts) {
     this.socket.onerror = this._stateChange.bind(this);
     this.socket.onclose = this._stateChange.bind(this);
     this.socket.onmessage = this._gotMessage.bind(this);
+
   };
 
   this.reconnect = function() {
@@ -132,6 +133,7 @@ module.exports = function(uriPath, opts) {
   SENDS MESSAGE TO SERVER
   CAN INCLUDE GPS COORDS HERE
   *******************/ 
+
   this.send = function(namespace, msg, cb) {
     var msgID = this._id()
 
