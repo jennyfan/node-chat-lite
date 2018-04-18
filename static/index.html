@@ -7,7 +7,7 @@
 
   </head>
   <body>
-    <h1>NODE</h1>
+    <h1>NODE: Connected Emergency Response</h1>
     <div id="header">
     </div>
 
@@ -17,7 +17,6 @@
 
     <script>
 
-    var x = document.getElementById("header");
     var latlon;
 
     function getLocation() {
@@ -26,16 +25,16 @@
             console.log("getLocation() navigator confirmed")
             
         } else {
-            x.innerHTML += "Geolocation is not supported by this browser.";
+            document.getElementById("header").innerHTML += "Geolocation is not supported by this browser.";
         }
     }
 
     function showPosition(position) {
 
-        console.log("show position");
+        latlon = position.coords.latitude + "," + position.coords.longitude;
+
         console.log(latlon);
 
-        latlon = position.coords.latitude + "," + position.coords.longitude;
         var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&key=AIzaSyDmYRB1HgbHfJ5CChFMyC3pVXdpwcMvsec";
         
         document.getElementById("header").innerHTML = "<img src='"+img_url+"'>";
@@ -60,8 +59,6 @@
                 break;
         }
     }
-
-    getLocation();
 
     </script>
 

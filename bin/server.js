@@ -125,6 +125,8 @@ wsServer.on('connection', function(ws, req) {
     console.log('received: %s', message.toString('utf8'));
     // attach GPS
 
+    console.log('get location');
+
     // send ACK
     setTimeout(function() {
 

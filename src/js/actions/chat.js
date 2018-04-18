@@ -28,6 +28,7 @@ var self = module.exports = {
     if(!app.state.user || !app.state.user.name) {
       // GET GPS COORDS for first time: getLocation(), showError()
 
+
       self.join(msg);
       msg = '~ ' + msg + ' joined the channel';
       type = 'status';
