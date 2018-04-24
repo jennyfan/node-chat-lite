@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+}
+body, div, form, input, button {
+  font-family: monospace;
+  color: #fff;
+  font-size: 16px;
+}
+h1 {
+  font-weight: 100;
+  font-size: 24px;
+  margin: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+/*** View message ****/
+#controls {
+  text-align: center;
+  height: 10vh;
+  width: 100%;
+}
+.form {
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+  margin: 0;
+  width: 100%;
+  z-index: 100;
+}
+.form input {
+  border: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  color: #aeaeae;
+  margin: 0;
+  padding: 0 16px;
+}
+.form input:focus, .form input:valid {
+  color: #fff;
+}
+#chat {
+  display: none;
+}
+#messages {
+  margin: 0;
+  padding: 16px 8px;
+  height: 80vh;
+  width: 100%;
+  overflow-y: scroll;
+  z-index: 100;
+}
+#messages ul, li {
+  list-style-type: none; margin: 0; padding: 0; }
+#messages li {
+  padding: 5px 10px;
+  background: rgba(0,0,0,0.3);
+  }
+#messages li:nth-child(odd) {
+  background: rgba(0,0,0,0.8);
+  color: #999;
+}
+
+
+/*** Request button ***/
+button {
+  color: #fff;
+  font-family: monospace;
+  text-align: center;
+  background-color: #FF3B30;
+  border: 1px solid #FF3B30;
+  border-radius: 8px;
+  margin-top: 16px;
+  padding: 12px;
+  font-size: 20px;
+}
+button:hover {
+  color: #FF3B30;
+  background-color: #fff;
+  border: 1px solid #FF3B30;
+}
